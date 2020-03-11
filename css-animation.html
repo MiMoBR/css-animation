@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  		<title></title>
+
+  		<style type="text/css">
+  			#demo {
+  				transform: none;
+				background: black;
+				color: white;
+				width: 7rem;
+				text-align: center;
+				padding: 1rem;
+
+				-moz-transform:none;
+				-webkit-transform:none;
+				-o-transform:none;
+				-ms-transform:none;
+				transform:none;
+				-webkit-transition:1.5s;
+    			transition:1.5s;
+			}
+			#demo:hover{
+				-moz-transform: translate(3px, 3px) skew(3deg, 3deg);
+				-webkit-transform: translate(3px, 3px) skew(3deg, 3deg);
+				-o-transform: translate(3px, 3px) skew(3deg, 3deg);
+				-ms-transform: translate(3px, 3px) skew(3deg, 3deg);
+				transform: translate(3px, 3px) skew(3deg, 3deg);
+			    -webkit-transition:1s;
+    			transition:1s;
+			}
+
+			/*		LINK HOVER		*/
+			* {
+			  box-sizing: border-box;
+			}
+			*::before, *::after {
+			  box-sizing: border-box;
+			}
+			body {
+			  font-family: 'Barlow', sans-serif;
+			  display: flex;
+			  align-items: center;
+			  justify-content: center;
+			  margin: 0;
+			  min-height: 100vh;
+			}
+			a {
+			  position: relative;
+			  display: inline-block;
+			  font-size: 2em;
+			  font-weight: 800;
+			  color: royalblue;
+			  overflow: hidden;
+			  background: linear-gradient(to right, red, red 50%, royalblue 50%);
+			  background-clip: text;
+			  -webkit-background-clip: text;
+			  -webkit-text-fill-color: transparent;
+			  background-size: 200% 100%;
+			  background-position: 100%;
+			  -webkit-transition:background-position 275ms ease;
+			  transition: background-position 275ms ease;
+			  text-decoration: none;
+			}
+			a:hover {
+			  background-position: 0 100%;
+
+			  -webkit-transition:background-position 1275ms ease;
+			  transition: background-position 1275ms ease;
+			}
+
+  		</style>
+
+	</head>
+	<body>
+
+		<div id="demo">Edit this text</div>
+
+		<a href="#">Link Hover</a>
+
+		<script type="text/javascript">
+			
+		</script>
+	</body>
+</html>
